@@ -1,9 +1,11 @@
 import { Link } from "@tanstack/react-router";
-import { Search, User, Heart, ShoppingBag } from "lucide-react";
+import { Search, User, Heart, ShoppingBag, Shield } from "lucide-react";
 import { useShop } from "@/lib/shop-store";
+import { useAuth } from "@/lib/auth";
 
 export function Header() {
   const { cartCount, setCartOpen, wishlist } = useShop();
+  const { isAdmin } = useAuth();
 
   return (
     <>
@@ -31,6 +33,11 @@ export function Header() {
           </div>
 
           <div className="flex items-center gap-5 md:gap-6">
+            {isAdmin && (
+              <Link to="/admin" aria-label="Admin" className="hidden md:flex items-center gap-1.5 text-[10px] uppercase tracking-luxe font-bold text-gold hover:opacity-80">
+                <Shield size={14} strokeWidth={1.5} /> Admin
+              </Link>
+            )}
             <Link to="/account" aria-label="Account" className="hover:text-gold transition-colors hidden md:block">
               <User size={18} strokeWidth={1.5} />
             </Link>
