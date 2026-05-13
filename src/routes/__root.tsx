@@ -10,6 +10,8 @@ import {
 
 import appCss from "../styles.css?url";
 import { ShopProvider } from "@/lib/shop-store";
+import { AuthProvider } from "@/lib/auth";
+import { Toaster } from "@/components/ui/sonner";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { MobileNav } from "@/components/MobileNav";
@@ -120,17 +122,20 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <ShopProvider>
-        <div className="min-h-screen flex flex-col pb-16 md:pb-0">
-          <Header />
-          <main className="flex-1">
-            <Outlet />
-          </main>
-          <Footer />
-          <MobileNav />
-          <CartDrawer />
-        </div>
-      </ShopProvider>
+      <AuthProvider>
+        <ShopProvider>
+          <div className="min-h-screen flex flex-col pb-16 md:pb-0">
+            <Header />
+            <main className="flex-1">
+              <Outlet />
+            </main>
+            <Footer />
+            <MobileNav />
+            <CartDrawer />
+            <Toaster />
+          </div>
+        </ShopProvider>
+      </AuthProvider>
     </QueryClientProvider>
   );
 }
