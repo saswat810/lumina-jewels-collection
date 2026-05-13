@@ -9,7 +9,7 @@ import { formatPrice } from "@/lib/format";
 export const Route = createFileRoute("/admin")({
   head: () => ({
     meta: [
-      { title: "Admin — L'Aurore" },
+      { title: "Admin — Lunovelle" },
       { name: "robots", content: "noindex" },
     ],
   }),

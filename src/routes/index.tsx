@@ -7,7 +7,7 @@ import { Stars } from "@/components/Stars";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "L'Aurore — Timeless Radiance in Fine Jewellery" },
+      { title: "Lunovelle — Timeless Radiance in Fine Jewellery" },
       { name: "description", content: "Hand-crafted fine jewellery since 1924. Explore the new collection of rings, earrings, necklaces and bracelets." },
     ],
   }),
@@ -16,7 +16,7 @@ export const Route = createFileRoute("/")({
 
 const TESTIMONIALS = [
   { name: "Eleanor V.", location: "London", quote: "The attention to detail in the packaging and the weight of the gold felt like a personal invitation into an older, more elegant world." },
-  { name: "Sophia K.", location: "New York", quote: "My engagement ring is more luminous than I ever dreamed. L'Aurore made every step effortless and personal." },
+  { name: "Sophia K.", location: "New York", quote: "My engagement ring is more luminous than I ever dreamed. Lunovelle made every step effortless and personal." },
   { name: "Camille R.", location: "Paris", quote: "Heirloom-quality craftsmanship with a genuinely modern point of view. I keep coming back." },
 ];
 
@@ -103,12 +103,12 @@ function HomePage() {
       {/* Featured */}
       <section className="bg-white py-24 border-y border-charcoal/5">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="flex justify-between items-end mb-12">
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-4 mb-12">
             <div>
               <span className="text-[10px] uppercase tracking-luxe text-gold font-bold">Selected by the atelier</span>
               <h2 className="text-4xl font-serif mt-2">Featured Pieces</h2>
             </div>
-            <Link to="/shop" search={{ category: undefined }} className="text-[10px] uppercase tracking-luxe border-b border-charcoal/20 pb-1 hover:text-gold transition-colors">
+            <Link to="/shop" search={{ category: undefined }} className="self-start sm:self-auto text-[10px] uppercase tracking-luxe border-b border-charcoal/20 pb-1 hover:text-gold transition-colors">
               Shop All
             </Link>
           </div>

@@ -12,7 +12,7 @@ export const Route = createFileRoute("/shop")({
   validateSearch: searchSchema,
   head: () => ({
     meta: [
-      { title: "Shop Fine Jewellery — L'Aurore" },
+      { title: "Shop Fine Jewellery — Lunovelle" },
       { name: "description", content: "Browse our full collection of rings, earrings, necklaces and bracelets in 18KT gold and ethical stones." },
     ],
   }),
@@ -55,7 +55,7 @@ function ShopPage() {
       </div>
 
       {/* Filter bar */}
-      <div className="sticky top-32 z-20 bg-bone/95 backdrop-blur-sm py-4 border-y border-charcoal/10 flex flex-wrap items-center justify-between gap-4 mb-12">
+      <div className="relative md:sticky md:top-32 z-20 bg-bone py-4 border-y border-charcoal/10 flex flex-wrap items-center justify-between gap-4 mb-12">
         <div className="flex items-center gap-4 flex-wrap">
           <span className="text-[10px] uppercase tracking-luxe font-bold">Filter:</span>
           <label className="flex items-center gap-3 text-[10px] uppercase tracking-luxe">

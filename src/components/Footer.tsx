@@ -3,7 +3,7 @@ export function Footer() {
     <footer className="bg-charcoal text-bone pt-24 pb-32 md:pb-24 mt-24">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
         <div className="col-span-2">
-          <div className="text-3xl font-serif mb-8">L'AURORE</div>
+          <div className="text-3xl font-serif mb-8">LUNOVELLE</div>
           <p className="text-bone/60 max-w-sm mb-8 leading-relaxed font-light">
             Crafting legacies since 1924. Every piece is a testament to the timeless pursuit of beauty and precision.
           </p>
@@ -36,7 +36,7 @@ export function Footer() {
         </div>
       </div>
       <div className="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-bone/10 flex justify-between text-[9px] uppercase tracking-luxe opacity-50">
-        <span>© 2026 L'Aurore Maison</span>
+        <span>© 2026 Lunovelle Maison</span>
         <span>Paris · Florence · New York</span>
       </div>
     </footer>
