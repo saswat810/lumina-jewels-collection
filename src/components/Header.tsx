@@ -20,7 +20,7 @@ export function Header() {
       <header className="sticky top-0 z-40 bg-bone/90 backdrop-blur-xl border-b border-charcoal/5">
         <div className="max-w-7xl mx-auto px-4 md:px-6 h-20 flex items-center justify-between gap-6">
           <Link to="/" className="text-xl md:text-2xl font-serif tracking-tighter font-bold flex-shrink-0">
-            L'AURORE
+            LUNOVELLE
           </Link>
 
           <div className="hidden md:flex flex-1 max-w-md items-center bg-dust/30 px-4 py-2.5 border border-transparent focus-within:border-gold/40 focus-within:bg-white transition-all">

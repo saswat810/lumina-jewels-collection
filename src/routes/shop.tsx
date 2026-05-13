@@ -12,7 +12,7 @@ export const Route = createFileRoute("/shop")({
   validateSearch: searchSchema,
   head: () => ({
     meta: [
-      { title: "Shop Fine Jewellery — L'Aurore" },
+      { title: "Shop Fine Jewellery — Lunovelle" },
       { name: "description", content: "Browse our full collection of rings, earrings, necklaces and bracelets in 18KT gold and ethical stones." },
     ],
   }),

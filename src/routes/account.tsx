@@ -7,8 +7,8 @@ import { toast } from "sonner";
 export const Route = createFileRoute("/account")({
   head: () => ({
     meta: [
-      { title: "Account — L'Aurore" },
-      { name: "description", content: "Sign in to your L'Aurore account." },
+      { title: "Account — Lunovelle" },
+      { name: "description", content: "Sign in to your Lunovelle account." },
     ],
   }),
   component: AccountPage,
@@ -128,7 +128,7 @@ function AccountPage() {
       </form>
 
       <p className="text-center text-xs text-charcoal/60 mt-8">
-        {mode === "signin" ? "New to L'Aurore? " : "Already have an account? "}
+        {mode === "signin" ? "New to Lunovelle? " : "Already have an account? "}
         <button
           type="button"
           onClick={() => setMode(mode === "signin" ? "signup" : "signin")}
