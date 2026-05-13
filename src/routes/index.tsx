@@ -103,12 +103,12 @@ function HomePage() {
       {/* Featured */}
       <section className="bg-white py-24 border-y border-charcoal/5">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="flex justify-between items-end mb-12">
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-4 mb-12">
             <div>
               <span className="text-[10px] uppercase tracking-luxe text-gold font-bold">Selected by the atelier</span>
               <h2 className="text-4xl font-serif mt-2">Featured Pieces</h2>
             </div>
-            <Link to="/shop" search={{ category: undefined }} className="text-[10px] uppercase tracking-luxe border-b border-charcoal/20 pb-1 hover:text-gold transition-colors">
+            <Link to="/shop" search={{ category: undefined }} className="self-start sm:self-auto text-[10px] uppercase tracking-luxe border-b border-charcoal/20 pb-1 hover:text-gold transition-colors">
               Shop All
             </Link>
           </div>
