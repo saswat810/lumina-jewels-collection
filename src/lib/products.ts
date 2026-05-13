@@ -4,6 +4,10 @@ import eternalPendant from "@/assets/p-eternal-pendant.jpg";
 import nomadCuff from "@/assets/p-nomad-cuff.jpg";
 import emeraldRing from "@/assets/p-emerald-ring.jpg";
 import tennisBracelet from "@/assets/p-tennis-bracelet.jpg";
+import catRings from "@/assets/cat-rings.jpg";
+import catEarrings from "@/assets/cat-earrings.jpg";
+import catNecklaces from "@/assets/cat-necklaces.jpg";
+import catBracelets from "@/assets/cat-bracelets.jpg";
 
 export type Category = "rings" | "earrings" | "necklaces" | "bracelets";
 
@@ -164,10 +168,10 @@ export const PRODUCTS: Product[] = [
 ];
 
 export const CATEGORIES: { id: Category; label: string; image: string }[] = [
-  { id: "rings", label: "Rings", image: (await import("@/assets/cat-rings.jpg")).default },
-  { id: "earrings", label: "Earrings", image: (await import("@/assets/cat-earrings.jpg")).default },
-  { id: "necklaces", label: "Necklaces", image: (await import("@/assets/cat-necklaces.jpg")).default },
-  { id: "bracelets", label: "Bracelets", image: (await import("@/assets/cat-bracelets.jpg")).default },
+  { id: "rings", label: "Rings", image: catRings },
+  { id: "earrings", label: "Earrings", image: catEarrings },
+  { id: "necklaces", label: "Necklaces", image: catNecklaces },
+  { id: "bracelets", label: "Bracelets", image: catBracelets },
 ];
 
 export function getProduct(slug: string) {
